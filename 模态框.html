@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模态框效果</title>
+	<style>
+		h1{
+			width: 600px;
+			margin: 18px auto;
+		}
+		.modals{
+			background-color: rgba(0, 0, 0, 0.4);
+			position: fixed;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
+		}
+		.m-body{
+			position: absolute;
+			top: 50%;							/*先向下移动50%的距离*/
+			left: 50%;							/*再向右移动50%的距离*/
+			width: 600px;			
+			transform: translate(-50%,-50%);	/*在分别向上和向左移动已有距离的一般（50%）即回到了中间*/
+			background-color: #fff;
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 18px 0 rgba(0, 0, 0, 0.8);
+		}
+		.m-head,.m-foot{
+			background-color: #009688;
+			color: #FFF;
+			padding: 1px 16px;
+		}
+		.m-head>span{
+			float: right;
+			cursor: pointer;
+			font-size: 20px;
+			margin-top: 12px;
+		}
+		.m-content{
+			padding: 16px;
+		}
+		.m-content>p{
+			margin: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h1>这是页面内容！</h1>
+	<h1>这是页面内容！</h1>
+	<h1>这是页面内容！</h1>
+	<h1>这是页面内容！</h1>
+
+	<div class="modals">
+
+		<div class="m-body">
+
+			<div class="m-head clean">
+				<span>×</span>
+				<p>头部</p>
+			</div>
+
+			<div class="m-content">
+				<p>这是内容</p>
+				<p>这是内容</p>
+			</div>
+
+			<div class="m-foot">
+				<p>尾部</p>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

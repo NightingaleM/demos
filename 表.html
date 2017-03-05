@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.layout{
+			width: 600px;
+			margin: 10px auto;
+		}
+		.navbar,
+		.chirld{
+			width: 100%;
+			list-style: none;
+			background-color: #f1f1f1;
+			box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+			padding: 0;
+			margin: 0;
+		}
+		.navbar>li{
+			float: left;
+			position: relative;
+		}
+		.navbar>li>a,
+		.chirld>li>a{
+			display: block;
+			text-decoration: none;
+			padding: 6px 16px;
+		}
+		.navbar:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		a{
+			color: #000;
+		}
+		a:hover{
+			background-color: #ccc;
+		}
+		.chirld{
+			display: none;
+			background-color: #fff;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			min-width: 180px;
+		}
+		.navbar>li:hover .chirld{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<ul class="navbar">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">作品</a></li>
+			<li>
+				<a href="#">更多</a>
+				<ul class="chirld">
+					<li><a href="#">GitHub</a></li>
+					<li><a href="#">博客</a></li>
+					<li><a href="#">知乎</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
