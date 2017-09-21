@@ -1,0 +1,488 @@
+		@font-face {font-family: "iconfont";
+		  src: url('iconfont.eot?t=1491459831680'); /* IE9*/
+		  src: url('iconfont.eot?t=1491459831680#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		  url('iconfont.woff?t=1491459831680') format('woff'), /* chrome, firefox */
+		  url('iconfont.ttf?t=1491459831680') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+		  url('iconfont.svg?t=1491459831680#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		*{
+			box-sizing: border-box;
+		}
+		*::selection  {
+			text-shadow: none;
+			background: #fed136;
+		}
+		.layout {
+			width: auto;
+			margin: 0 auto;
+		}
+		.clear:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.iconfont {
+			font-family:"iconfont" !important;
+			font-style:normal;
+		  	-webkit-font-smoothing: antialiased;
+  			-moz-osx-font-smoothing: grayscale;
+		}
+		body,header,h1,h2,h3,h4,h5,h6,p,a,li,ul {
+			padding: 0;
+			margin: 0;
+		}
+		.layout>div>h2 {
+			font-family: ;
+			font-size: 45px;
+			padding-top: 120px;
+			text-align: center;
+			font-weight: bolder;
+		}
+
+		.layout>div>p {
+			font-size: 15px;
+			text-align: center;
+			font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;/*增加字体*/
+			margin-top: 15px;
+			font-style: italic;
+		}
+		header {
+			position: fixed;
+			padding: 0 50px;
+			margin-top: 20px;
+			z-index: 10;
+			width: 100%;
+		}
+		header>h1 {
+			float: left;
+			display: inline-block;
+		}
+		header>ul {
+			display: inline-block;
+			float: right;	
+			position: relative;
+			top: 15px;
+		}
+		header h1 a{
+			font-family: 'MV Boli';/*logo字体*/
+			color: #ffdc3d;
+			font-size: 27px;
+			text-decoration: none;
+			padding: 10px 15px;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 30px;
+		}
+		.headlist li {
+			list-style: none;
+			display: inline-block;
+		}
+		.headlist a{
+			padding: 10px 15px;
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 25px;
+			color: #fff;
+		}
+		.headlist a:link{
+			text-decoration: none;
+			color: #fff;
+		}
+		.headlist a:hover{
+			color: #ffdc3d;
+		}
+		#welcome {
+			background-image: url('http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg');
+			background-position: center center;
+			background-size: cover;
+			height: 750px;
+		}
+		.welcomebox {
+			padding-top: 250px;
+			color: #fff;
+			text-align: center;
+		}
+		.welcomebox h2{
+			font-family: 'ISOCTEUR';/*大标题字体*/
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+		.welcomebox h1{
+			font-family: 'Impact';/*小标题字体*/
+			font-size: 70px;
+			letter-spacing: 7px;
+			margin-bottom: 70px;
+		}
+		.welcomebox a {
+			background-color: #ffdc3d;
+			color: #fff;
+			padding: 20px 40px;
+			text-decoration: none;
+			font-weight: bolder;
+			border-radius: 5px;
+		}
+		.welcomebox a:hover {
+			background-color: yellow;
+			color: black;
+		}
+		#services {
+			height: 730px;
+		}
+		.servicesbox {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.servicesbox>div {
+			float: left;
+			width: 33.33333%;
+			padding: 0 40px;
+			text-align: center;
+			margin-top: 90px;
+		}
+		.servicesbox>div>h3 {
+			margin-top: 25px;
+		}
+		.servicesbox>div>p {
+			margin-top: 10px;
+			font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+			line-height: 1.2;
+		}
+		#services .iconfont{
+			font-size: 65px;
+			background-color: #ffdc3d;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			color: #fff;
+			margin: 0 auto;
+			padding-top: 10px;
+		}
+		#portfolio {
+			height: 1300px;
+			background-color: #e4e4e4;
+		}
+		#portfolio ul {
+			text-decoration: none;
+			padding: 0;
+			margin: 0 auto;
+			margin-top: 60px;
+			width: 1260px;
+			font-size: 0;
+		}
+		#portfolio li{
+			padding: 0;
+			width: 400px;
+			text-align: center;
+			display: inline-block;
+			margin-right: 30px;
+			font-size: 14px;
+			position: relative;
+			background-color: #fff;
+			margin-top: 50px;
+		}
+		#portfolio li h4 {
+			font-family: ;/*增加字体*/
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		#portfolio li p {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;/*增加字体*/
+			font-size: 17px;
+			margin: 10px 0;
+			margin-bottom: 20px;
+			font-style: italic;
+		}
+		#portfolio li:nth-child(3n) {
+			margin: 0;
+		}
+		.hid {
+			transition: all ease .5s;
+			-webkit-transition: all ease .5s;
+			/*display: none;*/
+			opacity: 0;
+			width: 400px;
+			height: 289px;
+			background-color: rgba(254,209,54,.9);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index:9;
+		}
+		#portfolio img:hover+div{
+			/*display: block;*/
+			opacity: 1;
+		}
+		.hid:hover{
+			/*display: block;*/
+			opacity: 1;
+		}
+		.hid span {
+			display: block;
+			font-size: 60px;
+			color: #fff;
+			margin-top: 110px;
+		}
+		#about {
+			height: 1500px;
+			position: relative;
+		}
+		#about:after {
+			content: '';
+			height: 900px;
+			border: 1px solid #ccc;
+			position: absolute;
+			left: 50%;
+			top: 400px;
+			z-index: 8;
+			display: inline;
+		}
+		.aboutbox{
+			width: 1000px;
+			margin: 0 auto;
+			margin-top: 70px;
+			position: relative;
+			z-index: 9;
+		}
+		.aboutbox>h4 {
+			font-weight: bolder;
+			font-family: ;
+			
+		}
+		.abouttext {
+			display: inline-block;
+			width: 500px;
+			float: right;
+			text-align: left;
+			padding: 5px 30px 5px 130px;
+			line-height: 1.3em;
+		}
+		.abouttext:nth-child(2n-1) {
+			float: left;
+			text-align: right;
+			padding: 5px 130px 5px 30px;
+		}
+		.abouttext p {
+			padding-top: 10px;
+			font-size: 15px;
+			font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		.aboutimgbox {
+			display: inline-block;
+			border: 7px solid #ccc;
+			border-radius: 50%;
+			overflow: hidden;
+			width: 170px;
+			height: 170px;
+			position: absolute;
+			margin-left: -85px;
+			background-color: #ffdc3d;
+			text-align: center;
+		}
+		.aboutimgbox h4 {
+			padding-top: 40px;
+			width: 90px;
+			margin: 0 auto;
+			color: #fff;
+			font-size: 1.2em;
+/*			position: relative;
+			left: 40px;*/
+		}
+		.aboutimgbox:nth-child(2n-1) {
+			left: 50%;
+		}
+		.aboutimgbox img {
+			width: 156px;
+			height: 156px;
+		}
+		#team {
+			height: 900px;
+			background-color: #e4e4e4;
+		}
+		.teamerbox {
+			width: 1200px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.teamer {
+			margin-top: 40px;
+			float: left;
+			width: 33.33333%;
+		}
+		.teamer img {
+			border: 5px solid #fff;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.teamer a {									/*这是一种傻方法*/
+			text-decoration: none;
+			padding: 0 5px;
+			position: relative;
+		}
+		.teamer a span:nth-child(1) {
+			color: #222;
+			z-index: 8;
+			font-size: 40px;
+		}
+		.teamer a span:nth-child(2) {
+			opacity: 0;
+			position: absolute;
+			left: 5px;
+			font-size: 40px;
+			top: -20px;
+			z-index: 9;
+			color: #fec503;
+		}
+		.teamer a span:nth-child(2):hover {
+			opacity: .95;
+			transition: all ease .5s;
+			-webkit-transition: all ease .5s;
+		}
+		.teamer p {
+			font-family: ;
+			font-size: 14px;
+			font-style: italic;
+		}
+		.teamer h3,
+		.teamer div {
+			margin-top: 20px;
+		}
+		#team p:last-child {
+			width: 800px;
+			margin: 0 auto;
+			margin-top: 70px;
+		}
+		#ed {
+			height: 120px;
+			text-align: center;
+		}
+		#ed:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		#ed a {
+			margin: 0 50px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		#contact {
+			height: auto;
+			background: url(img/map-image.png);
+			background-color: #222;
+			background-position: 0 30px;
+			color: #fff;
+			background-repeat: no-repeat;
+		}
+		#contact form {
+			padding-bottom: 80px;
+		}
+		.contactbox {
+			width: 1200px;
+			margin: 0 auto;
+			margin-top: 30px;
+
+		}
+		.contact-name {
+			float: left;
+			width: 49%;
+		}
+		.contact-name input {
+			display: block;
+			width: 100%;
+			font-size: 17px;
+			color: #222;
+			padding: 20px;
+			margin-top: 25px;
+			border-radius: 5px;
+		}
+		.message {
+			float: right;
+			width: 49%;
+			margin-top: 25px;
+		}
+		.message textarea {
+			height: 242px;
+			width: 100%;
+			padding: 20px;
+			border-radius: 5px;
+			font-size: 17px;
+			color: #222;
+			font-family: inherit;
+		}
+		.sendmassage {
+			width: 202px;
+			height: 60px;
+			background-color: #fec503;
+			position: relative;
+			color: #fff;
+			margin: 0 auto;
+			border-radius: 5px;
+			text-align: center;
+			font-weight: bolder;
+			padding: 21px;
+			margin-top: 40px;
+		}
+		.sendmassage:hover {
+			background-color: orange;
+		}
+		.sendmassage input {
+			display: inline-block;
+			padding: 29px 99px;
+			opacity: 0;
+			position: absolute;
+			cursor: pointer;
+			width: 0;
+			height: 0;
+			top: 0;
+			left: 0;
+		}
+		footer {
+			height: 80px;
+			text-align: center;
+		}
+		footer:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+		footer p,
+		footer div,
+		footer a {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 14px;
+		}
+		footer>a {
+			color: #fec503;
+			text-decoration: none;
+		}
+		footer>a:hover {
+			text-decoration: underline;
+		}
+		footer div {
+			margin: 0 200px;
+		}
+		footer div a {
+			text-decoration: none;
+			padding: 0 5px;
+			position: relative;
+		}
+		footer div a span {
+			color: #222;
+			font-size: 40px;
+		}
+		footer div a span:hover {
+			color: #fec503;
+			transition: all ease .5s;
+			-webkit-transition: all ease .5s;
+		}
+		/*transition:all ease .5s;也可以用于背景色和字体色渐变，
+		最开始想用于display:none;渐变为display:block;的。
+		发现并不行，就用了现在代码中这种比较傻的方法。
+		写完后又试验了一下将transition用于背景色和字体色，
+		发现是可以的……
+		在footer部分用的是改变字体颜色，
+		在上面TEAM部分是用的两个元素重叠显示的傻方法……
+*/
